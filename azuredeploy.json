@@ -804,9 +804,6 @@
           "location": {
             "value": "[parameters('location')]"
           },
-		  "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
-          },
           "templateLinkAccessToken": {
             "value": "[parameters('templateLinkAccessToken')]"
           },
