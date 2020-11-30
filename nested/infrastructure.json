@@ -215,6 +215,11 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-cd-hp')]"
     },
+	"cmHostingPlanName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[concat(parameters('deploymentId'), '-cm-hp')]"
+    },
     "singleHostingPlanSkuName": {
       "type": "string",
       "defaultValue": "S3"
