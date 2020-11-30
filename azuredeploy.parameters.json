@@ -55,9 +55,6 @@
     },
     "machineLearningServerEndpointCertificationAuthorityCertificatePath": {
       "value": ""
-    },
-	"templateLinkBase": { 
-		"value": "https://raw.githubusercontent.com/jaffal83/AzureDeploy/main/" 
-	}
+    }
   }
 }
