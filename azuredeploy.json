@@ -456,6 +456,11 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-single')]"
     },
+	"cdWebAppName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+    },
     "xcSingleWebAppName": {
       "type": "string",
       "minLength": 1,
