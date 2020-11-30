@@ -456,6 +456,11 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-single')]"
     },
+    "cdWebAppName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+    },
     "xcSingleWebAppName": {
       "type": "string",
       "minLength": 1,
@@ -751,6 +756,9 @@
           "singleWebAppName": {
             "value": "[parameters('singleWebAppName')]"
           },
+          "cdWebAppName": {
+            "value": "[parameters('cdWebAppName')]"
+          },
           "authCertificateName": {
             "value": "[parameters('authCertificateName')]"
           },
@@ -1028,7 +1036,10 @@
           },
           "singleWebAppName": {
             "value": "[parameters('singleWebAppName')]"
-          },	      
+          },
+	      "cdWebAppName": {
+            "value": "[parameters('cdWebAppName')]"
+          },
           "xcSingleWebAppName": {
             "value": "[parameters('xcSingleWebAppName')]"
           },
@@ -1372,7 +1383,8 @@
 	      "cdHostingPlanName": "[parameters('cdHostingPlanName')]",
 
               "xcSingleWebAppName": "[parameters('xcSingleWebAppName')]",
-              "singleWebAppName": "[parameters('singleWebAppName')]",	      
+              "singleWebAppName": "[parameters('singleWebAppName')]",
+	      "cdWebAppName": "[parameters('cdWebAppName')]",
 
               "passwordSalt": "[parameters('passwordSalt')]",
 
