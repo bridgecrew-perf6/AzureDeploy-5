@@ -765,7 +765,7 @@
         "logicalName": "[variables('sitecoreTags').cd]"
       },
       "dependsOn": [ 
-        "[resourceId('Microsoft.Web/serverfarms', variables('cmHostingPlanNameTidy'))]" 
+        "[resourceId('Microsoft.Web/serverfarms', variables('cdHostingPlanNameTidy'))]" 
       ]
     },
     {
