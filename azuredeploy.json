@@ -756,6 +756,9 @@
           "singleWebAppName": {
             "value": "[parameters('singleWebAppName')]"
           },
+		  "cdWebAppName": {
+            "value": "[parameters('cdWebAppName')]"
+          },
           "authCertificateName": {
             "value": "[parameters('authCertificateName')]"
           },
