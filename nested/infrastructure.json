@@ -21,6 +21,7 @@
 
     "singleHostingPlanNameTidy": "[toLower(trim(parameters('singleHostingPlanName')))]",
 	"cdHostingPlanNameTidy": "[toLower(trim(parameters('cdHostingPlanName')))]",
+	"cmHostingPlanNameTidy": "[toLower(trim(parameters('cmHostingPlanName')))]",
 
     "siWebAppNameTidy": "[toLower(trim(parameters('siWebAppName')))]",
     "singleWebAppNameTidy": "[toLower(trim(parameters('singleWebAppName')))]",
@@ -770,7 +771,7 @@
         "logicalName": "[variables('sitecoreTags').cd]"
       },
       "dependsOn": [ 
-        "[resourceId('Microsoft.Web/serverfarms', variables('cdHostingPlanNameTidy'))]" 
+        "[resourceId('Microsoft.Web/serverfarms', variables('cmHostingPlanNameTidy'))]" 
       ]
     },
     {
