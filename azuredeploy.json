@@ -1028,7 +1028,10 @@
           },
           "singleWebAppName": {
             "value": "[parameters('singleWebAppName')]"
-          },	      
+          },	    
+		  "cdWebAppName": {
+            "value": "[parameters('cdWebAppName')]"
+          },	     		  
           "xcSingleWebAppName": {
             "value": "[parameters('xcSingleWebAppName')]"
           },
