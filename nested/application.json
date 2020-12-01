@@ -539,7 +539,7 @@
       "properties": {
         "WEBSITE_LOAD_CERTIFICATES": "[parameters('authCertificateThumbprint')]",
         "WEBSITE_DYNAMIC_CACHE": 0,
-        "WEBSITE_NODE_DEFAULT_VERSION":"[parameters('cdNodeJsVersion')]",
+        "WEBSITE_NODE_DEFAULT_VERSION":"[parameters('nodeJsVersion')]",
         "SITECORE_ENVIRONMENT_TYPE": "[parameters('environmentType')]"
       },
       "dependsOn": [
