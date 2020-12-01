@@ -511,7 +511,7 @@
         ]
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Web/sites/extensions', variables('cmWebAppNameTidy'),'MSDeploy')]"
+        "[resourceId('Microsoft.Web/sites/extensions', variables('singleWebAppNameTidy'),'MSDeploy')]"
       ]
     },
     {
