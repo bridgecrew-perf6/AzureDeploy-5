@@ -1091,9 +1091,6 @@
           "nodeJsVersion": {
             "value": "[parameters('nodeJsVersion')]"
           },
-	 "cdNodeJsVersion": {
-            "value": "[parameters('cdNodeJsVersion')]"
-          },
           "environmentType": {
             "value": "[parameters('environmentType')]"
           },
