@@ -659,9 +659,6 @@
           "location": {
             "value": "[parameters('location')]"
           },
-		  "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
-          },
           "sqlServerName": {
             "value": "[parameters('sqlServerName')]"
           },
@@ -670,9 +667,6 @@
           },
           "sqlServerPassword": {
             "value": "[parameters('sqlServerPassword')]"
-          },
-		  "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
           },
           "sqlServerVersion": {
             "value": "[parameters('sqlServerVersion')]"
@@ -927,9 +921,6 @@
           "location": {
             "value": "[parameters('location')]"
           },
-		  "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
-          },
           "sitecoreAdminPassword": {
             "value": "[parameters('sitecoreAdminPassword')]"
           },
@@ -1143,9 +1134,6 @@
           },
           "location": {
             "value": "[parameters('location')]"
-          },
-		  "sitecoreSKU": {
-            "value": "[parameters('sitecoreSKU')]"
           },
           "sitecoreAdminPassword": {
             "value": "[parameters('sitecoreAdminPassword')]"
