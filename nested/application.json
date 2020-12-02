@@ -27,6 +27,9 @@
     "azureServiceBusVersion": "2017-04-01",
     "azureServiceBusNamespaceNameTidy": "[toLower(trim(parameters('azureServiceBusNamespaceName')))]",
 	"redisCacheNameTidy": "[toLower(trim(parameters('redisCacheName')))]",
+	"redisApiVersion": "2016-04-01",
+	"appInsightsNameTidy": "[toLower(trim(parameters('applicationInsightsName')))]",
+	"appInsightsApiVersion": "2015-05-01",
   },
   "parameters": {
     "infrastructure": {
