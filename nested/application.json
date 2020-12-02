@@ -548,7 +548,7 @@
         "SITECORE_ENVIRONMENT_TYPE": "[parameters('environmentType')]"
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Web/sites/extensions', variables('repWebAppNameTidy'),'MSDeploy')]"
+        "[resourceId('Microsoft.Web/sites/extensions', variables('singleWebAppNameTidy'),'MSDeploy')]"
       ]
     }
   ]
