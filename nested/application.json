@@ -25,7 +25,8 @@
     "searchServiceNameTidy": "[toLower(trim(parameters('searchServiceName')))]",
     "applicationInsightsNameTidy": "[toLower(trim(parameters('applicationInsightsName')))]",
     "azureServiceBusVersion": "2017-04-01",
-    "azureServiceBusNamespaceNameTidy": "[toLower(trim(parameters('azureServiceBusNamespaceName')))]"
+    "azureServiceBusNamespaceNameTidy": "[toLower(trim(parameters('azureServiceBusNamespaceName')))]",
+	"redisCacheNameTidy": "[toLower(trim(parameters('redisCacheName')))]",
   },
   "parameters": {
     "infrastructure": {
@@ -342,7 +343,12 @@
     "azureServiceBusAccessKeyName" : {
       "type": "string",
       "minLength": 1
-    }
+    },
+	"redisCacheName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
+    },
   },
   "resources": [
     {
