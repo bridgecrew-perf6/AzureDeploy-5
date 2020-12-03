@@ -5,6 +5,7 @@
     "webApiVersion": "2016-03-01",
     "searchApiVersion": "2015-08-19",
     "searchRestApiVersion": "2017-11-11",
+	"redisApiVersion": "2016-04-01",
     "applicationInsightsApiVersion": "2015-05-01",
     "sqlServerFqdnTidy": "[trim(toLower(parameters('sqlServerFqdn')))]",
     "coreSqlDatabaseNameTidy": "[toLower(trim(parameters('coreSqlDatabaseName')))]",
@@ -30,6 +31,7 @@
 	"redisApiVersion": "2016-04-01",
 	"appInsightsNameTidy": "[toLower(trim(parameters('applicationInsightsName')))]",
 	"appInsightsApiVersion": "2015-05-01",
+	"redisCacheNameTidy": "[toLower(trim(parameters('redisCacheName')))]"
   },
   "parameters": {
     "infrastructure": {
@@ -79,6 +81,11 @@
       "type": "string",
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-core-db')]"
+    },
+	"redisCacheName": {
+      "type": "string",
+      "minLength": 1,
+      "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
     "masterSqlDatabaseName": {
       "type": "string",
