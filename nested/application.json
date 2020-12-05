@@ -554,8 +554,8 @@
         "WEBSITE_NODE_DEFAULT_VERSION":"[parameters('nodeJsVersion')]",
         "SITECORE_ENVIRONMENT_TYPE": "[parameters('environmentType')]"
       },
-      "dependsOn": [
-        "[resourceId('Microsoft.Web/sites/extensions', variables('singleWebAppNameTidy'),'MSDeploy')]"
+      "dependsOn": [        
+		"[concat('Microsoft.Web/Sites/', variables('cdWebAppNameTidy'), '/Extensions/MSDeploy')]"
       ]
     }
   ]
